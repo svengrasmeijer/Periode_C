@@ -12,8 +12,8 @@ public class Practicum_2B_Main {
         System.out.println("Ajax gespeeld: " + ajx.aantalGespeeld());
         System.out.println();
 
-        System.out.println(ajx.naam + " " + ajx.aantalGespeeld() + " " + ajx.aantalGewonnen + " " + ajx.aantalGelijk + " " + ajx.aantalVerloren + " " + ajx.aantalPunten());
-        System.out.println(feij.naam + " " + feij.aantalGespeeld() + " " + feij.aantalGewonnen + " " + feij.aantalGelijk + " " + feij.aantalVerloren + " " + feij.aantalPunten());
+        System.out.println(ajx);
+        System.out.println(feij);
     }
 
 }

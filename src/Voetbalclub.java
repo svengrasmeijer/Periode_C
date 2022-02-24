@@ -24,4 +24,8 @@ public class Voetbalclub {
         int gelijkpunten = aantalGelijk;
         return gewonnenpunten + gelijkpunten;
     }
+
+    public String toString() {
+        return naam + " " + aantalGespeeld() + " " + aantalGewonnen + " " + aantalGelijk + " " + aantalVerloren + " " + aantalPunten();
+    }
 }
