@@ -1,3 +1,5 @@
+package Practicum_4B;
+
 public class AutoHuur {
     private int aantalDagen;
     private Klant huurder;

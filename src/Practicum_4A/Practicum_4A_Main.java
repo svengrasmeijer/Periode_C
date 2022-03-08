@@ -1,3 +1,5 @@
+package Practicum_4A;
+
 public class Practicum_4A_Main {
     public static void main(String[] args) {
         Huis h1 = new Huis("Nijenoord 1", 1970);

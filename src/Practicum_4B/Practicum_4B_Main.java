@@ -1,3 +1,5 @@
+package Practicum_4B;
+
 public class Practicum_4B_Main {
     public static void main(String[] args) {
         AutoHuur ah1 = new AutoHuur();

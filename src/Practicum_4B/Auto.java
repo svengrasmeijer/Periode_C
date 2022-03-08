@@ -1,3 +1,5 @@
+package Practicum_4B;
+
 public class Auto {
     private final String type;
     private final double prijsPerDag;

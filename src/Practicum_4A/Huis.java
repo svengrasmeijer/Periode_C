@@ -1,3 +1,5 @@
+package Practicum_4A;
+
 public class Huis {
     private String adres;
     private int bouwjaar;
@@ -19,10 +21,10 @@ public class Huis {
 
     public String toString() {
         if (huisbaas == null) {
-            return "Huis " + adres + " is gebouwd in " + bouwjaar + "\nen heeft huisbaas geen huisbaas";
+            return "Practicum_4A.Huis " + adres + " is gebouwd in " + bouwjaar + "\nen heeft huisbaas geen huisbaas";
         }
         else {
-            return "Huis " + adres + " is gebouwd in " + bouwjaar + "\nen heeft huisbaas: " + huisbaas;
+            return "Practicum_4A.Huis " + adres + " is gebouwd in " + bouwjaar + "\nen heeft huisbaas: " + huisbaas;
         }
     }
 }

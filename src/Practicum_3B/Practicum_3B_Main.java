@@ -1,3 +1,5 @@
+package Practicum_3B;
+
 public class Practicum_3B_Main {
     //als de code wordt uitgevoerd zonder de try catch zou je gwn null krijgen van c1 en c2.
     public static void main(String[] args) {

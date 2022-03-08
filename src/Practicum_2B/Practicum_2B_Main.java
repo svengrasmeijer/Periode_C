@@ -1,3 +1,5 @@
+package Practicum_2B;
+
 public class Practicum_2B_Main {
     public static void main(String[] args) {
         Voetbalclub ajx = new Voetbalclub("Ajax      ");

@@ -1,3 +1,5 @@
+package Practicum_4B;
+
 public class Klant {
     private final String naam;
     private double kortingsPercentage;

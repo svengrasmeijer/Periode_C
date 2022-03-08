@@ -1,3 +1,5 @@
+package Practicum_1;
+
 public class Assignment_4 {
     public static void main(String[] args) {
         int num =39;

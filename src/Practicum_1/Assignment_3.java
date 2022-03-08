@@ -1,3 +1,5 @@
+package Practicum_1;
+
 import java.util.Random;
 class Assignment_3 {
     public static void main(String[] args) {

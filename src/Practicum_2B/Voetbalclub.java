@@ -1,3 +1,5 @@
+package Practicum_2B;
+
 public class Voetbalclub {
     private int aantalGewonnen;
     private int aantalGelijk;

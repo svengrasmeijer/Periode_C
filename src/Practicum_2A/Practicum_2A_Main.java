@@ -1,3 +1,5 @@
+package Practicum_2A;
+
 public class Practicum_2A_Main {
     public static void main(String[] arg) {
         Zwembad z1 = new Zwembad(2.0, 5.5, 1.5);
