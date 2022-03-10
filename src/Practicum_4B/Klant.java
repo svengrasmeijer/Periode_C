@@ -17,6 +17,14 @@ public class Klant {
     }
 
     public String toString() {
-        return naam + " (korting: " + kortingsPercentage + "%)";
+        if (naam == null) {
+            return "onbekend (korting: " + kortingsPercentage + "%)";
+        }
+        if (naam.equals("")) {
+            return "onbekend (korting: " + kortingsPercentage + "%)";
+        }
+        else {
+            return naam + " (korting: " + kortingsPercentage + "%)";
+        }
     }
 }

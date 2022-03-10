@@ -14,6 +14,14 @@ public class Auto {
     }
 
     public String toString() {
-        return type + " met prijs per dag: " + prijsPerDag;
+        if (type == null) {
+            return  "onbekend met prijs per dag: " + prijsPerDag;
+        }
+        if (type.equals("")) {
+            return  "onbekend met prijs per dag: " + prijsPerDag;
+        }
+        else {
+            return type + " met prijs per dag: " + prijsPerDag;
+        }
     }
 }

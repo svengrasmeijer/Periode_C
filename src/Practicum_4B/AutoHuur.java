@@ -47,10 +47,10 @@ public class AutoHuur {
             return "Autotype: " + gehuurdeAuto + "\ngeen huurder bekend " +  "\naantal dagen: " + aantalDagen + " en dat kost 0.0";
         }
         if (gehuurdeAuto == null) {
-            return "Autotype: er is geen auto bekend" + "\nop naam van  " + huurder + "\naantal dagen: " + aantalDagen + " en dat kost 0.0";
+            return "Autotype: er is geen auto bekend" + "\nop naam van " + huurder + "\naantal dagen: " + aantalDagen + " en dat kost 0.0";
         }
         else {
-            return "Autotype: " + gehuurdeAuto + "\nop naam van  " + huurder + "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
+            return "Autotype: " + gehuurdeAuto + "\nop naam van " + huurder + "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
         }
     }
 }
