@@ -3,7 +3,7 @@ package Practicum_3A;
 import java.util.Objects;
 
 public class Voetbalclub {
-    public String naam;
+    private String naam;
     private int aantalGewonnen;
     private int aantalGelijk;
     private int aantalVerloren;
@@ -12,7 +12,7 @@ public class Voetbalclub {
         naam = enteredName;
         if (enteredName == null | Objects.equals(enteredName, ""))
         {
-            naam = "FC        ";
+            naam = "FC";
         }
     }
 
@@ -23,6 +23,10 @@ public class Voetbalclub {
             aantalGelijk = aantalGelijk + 1;
         if (ch == 'v')
             aantalVerloren = aantalVerloren + 1;
+    }
+
+    public String getNaam() {
+        return naam;
     }
 
     public int aantalPunten(){

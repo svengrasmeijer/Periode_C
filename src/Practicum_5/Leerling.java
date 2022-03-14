@@ -19,4 +19,6 @@ public class Leerling {
     public void setCijfer(double c) {
         cijfer = c;
     }
+
+    public void
 }

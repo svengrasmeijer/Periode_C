@@ -13,31 +13,31 @@ public class Zwembad {
         diepte = newdiepte;
     }
 
-    public Double getBreedte() {
+    public double getBreedte() {
         return breedte;
     }
-    public Double getLengte() {
+    public double getLengte() {
         return lengte;
     }
-    public Double getDiepte() {
+    public double getDiepte() {
         return diepte;
     }
     public String toString() {
         return "Dit zwembad is " + breedte + " meter hoog, "  + lengte + " meter lang, en " + diepte + " meter diep";
     }
-    public Double inhoud() {
+    public double inhoud() {
         return (diepte * lengte * breedte);
     }
 
-    public void setBreedte(Double newbreedte) {
+    public void setBreedte(double newbreedte) {
         breedte = newbreedte;
     }
 
-    public void setLengte(Double newlengte) {
+    public void setLengte(double newlengte) {
         lengte = newlengte;
     }
 
-    public void setDiepte(Double newdiepte) {
+    public void setDiepte(double newdiepte) {
         diepte = newdiepte;
     }
 }
