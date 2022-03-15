@@ -1,16 +1,10 @@
 package Practicum_3A;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class VoetbalclubTest {
-    Voetbalclub test;
 
-    @BeforeEach
-    void init() {
-        test = new Voetbalclub("Ajax");
-    }
     @Test
     void naamisAjaxTest() {
         Voetbalclub test1 = new Voetbalclub("Ajax");
@@ -18,7 +12,8 @@ public class VoetbalclubTest {
     }
     @Test
     void naamisleegTest() {
-        assertEquals("FC", test.getNaam());
+        Voetbalclub test2 = new Voetbalclub("");
+        assertEquals("FC", test2.getNaam());
     }
     @Test
     void naamisnullTest() {

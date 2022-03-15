@@ -9,13 +9,17 @@ public class Cirkel {
         radius = newradius;
         xPositie = newxPositie;
         yPositie = newyPositie;
+
+        if (radius == 0) {
+            throw new IllegalArgumentException("Radius moet groter zijn dan 0!");
+        }
     }
 
     public String toString() {
         if (radius == 0) {
             return null;
         } else {
-            return "Radius moet groter zijn dan 0! \ncirkel (" + xPositie + ", " + yPositie + ") met radius: " + radius;
+            return "cirkel (" + xPositie + ", " + yPositie + ") met radius: " + radius;
         }
     }
 }
