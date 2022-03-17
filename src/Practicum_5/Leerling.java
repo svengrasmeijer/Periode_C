@@ -12,11 +12,15 @@ public class Leerling {
         return naam;
     }
 
+    public void setCijfer(double c) {
+        cijfer = c;
+    }
+
     public double getCijfer() {
         return cijfer;
     }
 
-    public void setCijfer(double c) {
-        cijfer = c;
+    public String toString() {
+        return "\n" + naam + " heeft cijfer: " + cijfer;
     }
 }

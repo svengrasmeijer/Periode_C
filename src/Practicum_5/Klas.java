@@ -3,9 +3,8 @@ import java.util.ArrayList;
 
 public class Klas {
     private String klasCode;
+    private ArrayList<Leerling> leerlingen = new ArrayList<>();
     private Leerling leerling;
-    private String naam;
-    private double cijfer;
 
     Klas(String kC) {
         klasCode = kC;
@@ -13,25 +12,23 @@ public class Klas {
 
     public void voegLeerlingToe(Leerling l) {
         leerling = l;
+        leerlingen.add(leerling);
     }
 
     public void wijzigCijfer(String nm, double nweCijfer) {
-        naam = nm;
-        cijfer = nweCijfer;
-
+        leerling.setCijfer(nweCijfer);
     }
 
     public ArrayList<Leerling> getLeerlingen() {
-        getLeerlingen().add(leerling);
-        return getLeerlingen();
-
+        return leerlingen;
     }
 
     public int aantalLeerlingen() {
-        return 0;
+        int size = getLeerlingen().size();
+        return size;
     }
 
     public String toString() {
-        return null;
+        return "In klas " + klasCode + " zitten de volgende leerlingen: " + leerlingen + "\n";
     }
 }
