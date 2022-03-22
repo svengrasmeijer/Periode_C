@@ -30,11 +30,17 @@ public class AutoHuur {
     }
 
     public double totaalPrijs() {
-        double prijs = getAantalDagen() * gehuurdeAuto.getPrijsPerDag();
-        if (this.gehuurdeAuto == null) {
+        if (gehuurdeAuto == null) {
+            return 0;
+        }
+        else if (huurder == null) {
+            return 0;
+        }
+        else if (aantalDagen == 0) {
             return 0;
         }
         else {
+            double prijs = getAantalDagen() * gehuurdeAuto.getPrijsPerDag();
             return prijs * huurder.getKorting();
         }
     }
@@ -50,7 +56,7 @@ public class AutoHuur {
             return "Autotype: er is geen auto bekend" + "\nop naam van " + huurder + "\naantal dagen: " + aantalDagen + " en dat kost 0.0";
         }
         else {
-            return "Autotype: " + gehuurdeAuto + "\nop naam van " + huurder + "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
+            return "Autotype: " + gehuurdeAuto.toString() + "\nop naam van " + huurder + "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
         }
     }
 }

@@ -1,7 +1,7 @@
 package Practicum_5;
 
 public class Leerling {
-    private String naam;
+    private final String naam;
     private double cijfer;
 
     Leerling(String nm) {
@@ -21,6 +21,6 @@ public class Leerling {
     }
 
     public String toString() {
-        return "\n" + naam + " heeft cijfer: " + cijfer;
+        return "\n" + getNaam() + " heeft cijfer: " + getCijfer();
     }
 }
