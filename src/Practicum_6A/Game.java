@@ -20,7 +20,19 @@ public class Game {
     }
 
     public boolean equals(Object andereObject) {
-        return true;
+        boolean gelijkeObjecten = false;
+
+        if (andereObject instanceof Game) {
+            Game andereGame = (Game) andereObject;
+
+            if (this.naam.equals(andereGame.naam) &&
+                    this.releasejaar == andereGame.releasejaar &&
+                    this.nieuwprijs == andereGame.nieuwprijs) {
+
+                gelijkeObjecten = true;
+            }
+        }
+        return gelijkeObjecten;
     }
 
     public String  toString() {

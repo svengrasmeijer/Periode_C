@@ -17,7 +17,6 @@ public class Persoon {
     }
 
     public boolean koop(Game g) {
-
         return true;
     }
 
